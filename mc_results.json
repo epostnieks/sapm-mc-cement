@@ -1,0 +1,141 @@
+{
+  "paper_id": "cement",
+  "config_file": "pipeline/mc_configs/cement.json",
+  "seed": 42,
+  "n_draws": 100000,
+  "n_channels": 6,
+  "correlation_rho": 0.3,
+  "private_payoff_B": 170.0,
+  "beta_w": {
+    "median": 3.21,
+    "mean": 3.3,
+    "std": 0.67,
+    "p1": 2.12,
+    "p5": 2.37,
+    "p95": 4.52,
+    "p99": 5.27,
+    "ci_90": [
+      2.4,
+      4.5
+    ],
+    "ci_99": [
+      2.1,
+      5.3
+    ],
+    "p_below_1": 0.0,
+    "p_below_1_pct": "0.0000%"
+  },
+  "impossibility_floor": {
+    "floor_value": 3.6,
+    "p_below_floor": 0.71657,
+    "p_below_floor_pct": "71.6570%"
+  },
+  "welfare_cost": {
+    "total_median_B": 546.2,
+    "total_mean_B": 560.8,
+    "total_p5_B": 403.7,
+    "total_p95_B": 768.2
+  },
+  "pi_sa": {
+    "median_B": 376.2,
+    "mean_B": 390.8,
+    "p5_B": 233.7,
+    "p95_B": 598.2
+  },
+  "channel_statistics": {
+    "C1_climate_damages": {
+      "median": 219.6,
+      "mean": 234.7,
+      "p5": 120.5,
+      "p95": 399.1,
+      "std": 88.2
+    },
+    "C2_aggregate_extraction": {
+      "median": 70.0,
+      "mean": 72.2,
+      "p5": 46.6,
+      "p95": 105.3,
+      "std": 18.1
+    },
+    "C3_regulatory_capture": {
+      "median": 55.0,
+      "mean": 56.0,
+      "p5": 40.3,
+      "p95": 75.0,
+      "std": 10.7
+    },
+    "C4_health_externalities": {
+      "median": 45.0,
+      "mean": 45.7,
+      "p5": 33.7,
+      "p95": 59.9,
+      "std": 8.1
+    },
+    "C5_structural_overdesign": {
+      "median": 59.9,
+      "mean": 60.9,
+      "p5": 45.0,
+      "p95": 79.8,
+      "std": 10.7
+    },
+    "C6_governance_lockin": {
+      "median": 89.9,
+      "mean": 91.4,
+      "p5": 67.5,
+      "p95": 120.0,
+      "std": 16.1
+    }
+  },
+  "sensitivity_matrix": [
+    {
+      "vsl_multiplier": 0.5,
+      "values": {
+        "dc_0pct": 2.53,
+        "dc_10pct": 2.28,
+        "dc_20pct": 2.02,
+        "dc_30pct": 1.77,
+        "dc_40pct": 1.52
+      }
+    },
+    {
+      "vsl_multiplier": 0.75,
+      "values": {
+        "dc_0pct": 2.85,
+        "dc_10pct": 2.57,
+        "dc_20pct": 2.28,
+        "dc_30pct": 2.0,
+        "dc_40pct": 1.71
+      }
+    },
+    {
+      "vsl_multiplier": 1.0,
+      "values": {
+        "dc_0pct": 3.18,
+        "dc_10pct": 2.86,
+        "dc_20pct": 2.54,
+        "dc_30pct": 2.22,
+        "dc_40pct": 1.91
+      }
+    },
+    {
+      "vsl_multiplier": 1.25,
+      "values": {
+        "dc_0pct": 3.5,
+        "dc_10pct": 3.15,
+        "dc_20pct": 2.8,
+        "dc_30pct": 2.45,
+        "dc_40pct": 2.1
+      }
+    },
+    {
+      "vsl_multiplier": 1.5,
+      "values": {
+        "dc_0pct": 3.82,
+        "dc_10pct": 3.44,
+        "dc_20pct": 3.06,
+        "dc_30pct": 2.68,
+        "dc_40pct": 2.29
+      }
+    }
+  ]
+}
